@@ -1017,7 +1017,8 @@ a {
 .rn-blog .inner .content .title {
     margin: 0;
 }
-.rn-portfolio .inner .content .title a, .rn-blog .inner .content .title a {
+.rn-portfolio .inner .content .title a, 
+.rn-blog .inner .content .title a {
     transition: var(--transition);
     color: var(--color-lightn);
     font-weight: 600;
@@ -1025,17 +1026,20 @@ a {
     line-height: 34px;
     display: inline-block;
 }
-.rn-portfolio .inner .content .title:hover a, .rn-blog .inner .content .title:hover a {
+.rn-portfolio .inner .content .title:hover a,
+ .rn-blog .inner .content .title:hover a {
     color: var(--color-primary);
 }
-.rn-portfolio .inner .content .title a i, .rn-blog .inner .content .title a i {
+.rn-portfolio .inner .content .title a i,
+ .rn-blog .inner .content .title a i {
     font-size: 0;
     position: relative;
     top: 10px;
     transition: var(--transition);
     opacity: 0;
 }
-.rn-portfolio .inner .content .title:hover a i, .rn-blog .inner .content .title:hover a i {
+.rn-portfolio .inner .content .title:hover a i, 
+.rn-blog .inner .content .title:hover a i {
     color: var(--color-primary);
     top: 3px;
     opacity: 1;
@@ -1046,8 +1050,231 @@ a:hover, a:focus, a:active {
     outline: none;
     color: var(--color-primary);
 }
-
-
-
      /*------== Single Portfolio Start==-------*/
+
 /*------== Portfolio Start==-------*/
+
+/*----------==Resume Start==-------------*/
+.section-separator {
+    position: relative;
+}
+.rn-section-gap {
+    padding: 100px 0;
+}
+.section-title span.subtitle {
+    color: var(--color-subtitle);
+    letter-spacing: 1px;
+    display: block;
+    line-height: 14px;
+}
+.section-title span.subtitle {
+    color: #ff014f;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 14px;
+    font-family: var(--font-secondary);
+    font-weight: 500;
+}
+.mt--45 {
+    margin-top: 45px !important;
+}
+.rn-nav-list .nav-item {
+    flex-basis: 25%;
+    text-align: center;
+    margin-top: 0;
+}
+
+.rn-nav-list .nav-item .nav-link {
+    color: #c4cfde;
+    font-family: var(--font-primary);
+    padding: 30px 10px;
+    text-transform: capitalize;
+    font-size: var(--font-size-b1);
+    font-weight: 500;
+    outline: none;
+    border: 0 none;
+    transition: all .5s;
+    background: transparent;
+    border-radius: 10px;
+    box-shadow: var(--shadow-1);
+     background: var(--background-color-1);
+}
+.rn-nav-list .nav-item .nav-link:hover, .rn-nav-list .nav-item .nav-link.active {
+    color: #ff014f;
+    background-color: transparent;
+    border-color: transparent;
+    border: 0 none;
+}
+   /*---==Tab content Wrapper Start==---*/
+
+         /*-----==Single Resume Start==----*/
+ .mt--40 {
+    margin-top: 40px !important;
+ }
+
+         /*----Skill List Start-----*/
+  .personal-experience-inner .content span.subtitle {
+     color: var(--color-subtitle);
+     font-size: 14px;
+     letter-spacing: 2px;
+     font-weight: 500;
+ }    
+ .personal-experience-inner .content .maintitle {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 62px;
+    color: var(--color-lightn);
+}
+.personal-experience-inner .experience-list {
+    padding-left: 31px;
+    border-left: 5px solid #17191c;
+}
+               /*--Single List Start--*/
+
+.personal-experience-inner .experience-list 
+.resume-single-list {
+     position: relative;
+     z-index: 2;
+     margin-top: 50px;
+     padding: 45px 40px;
+     border-radius: 6px;
+     background: var(--background-color-1);
+     box-shadow: var(--shadow-1);
+     transition: var(--transition);
+}
+.personal-experience-inner .experience-list 
+.resume-single-list:hover {
+    background: #212427;
+}
+.personal-experience-inner .experience-list 
+.resume-single-list::before {
+    content: '';
+    position: absolute;
+    transition: var(--transition);
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right bottom, #212428, #16181c);
+    opacity: 0;
+    z-index: -1;
+}
+.personal-experience-inner .experience-list
+ .resume-single-list:hover::before {
+    opacity: 1;
+}
+.personal-experience-inner .experience-list 
+.resume-single-list .inner::before {
+    position: absolute;
+    content: "";
+    width: 28px;
+    height: 5px;
+    right: 100%;
+    top: 63px;
+    transform: translateY(-7px);
+    background: #1b1c1d;
+    z-index: 0;
+}
+.personal-experience-inner .experience-list 
+.resume-single-list .inner .heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #1a1d23;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+.personal-experience-inner .experience-list 
+.resume-single-list .inner .heading .title {
+    margin-bottom: 15px;
+}
+.personal-experience-inner .experience-list 
+.resume-single-list .inner .heading .title h4 {
+    color: var(--color-lightn);
+    font-family: var(--font-primary);
+    font-size: 24px;
+    line-height: 39px;
+    margin-bottom: 7px;
+    font-weight: 500;
+    transition: var(--transition);
+}
+.personal-experience-inner .experience-list 
+.resume-single-list:hover .inner .heading .title h4 {
+    color: var(--color-white);
+}
+.personal-experience-inner .experience-list
+ .resume-single-list .inner .heading .title span {
+    color: #7c838e;
+    display: block;
+    font-size: 14px;
+}
+.personal-experience-inner .experience-list 
+.resume-single-list .inner .heading .date-of-time {
+    display: inline-block;
+}
+.personal-experience-inner .experience-list 
+.resume-single-list .inner .heading .date-of-time span {
+    color: var(--color-primary);
+    display: block;
+    font-size: 14px;
+    padding: 0 15px;
+    height: 36px;
+    line-height: 36px;
+    border-radius: 6px;
+    background: var(--background-color-1);
+    box-shadow: var(--shadow-1);
+    transition: var(--transition);
+    font-weight: 500;
+}
+.personal-experience-inner .experience-list
+.resume-single-list:hover .inner .heading .date-of-time span {
+    background: #1e2025;
+    box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #222527;
+}
+.personal-experience-inner .experience-list 
+.resume-single-list:hover .inner .description {
+    color: var(--color-lightn);
+}
+.personal-experience-inner .experience-list 
+.resume-single-list .inner p {
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--color-body);
+    transition: var(--transition);
+}
+p {
+    font-size: var(--font-size-b2);
+    line-height: var(--line-height-b2);
+    font-weight: var(--p-regular);
+    color: var(--color-body);
+    margin: 0 0 40px;
+}
+p:last-child {
+    margin-bottom: 0;
+}
+.personal-experience-inner .experience-list
+ .resume-single-list .inner::after {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    border: 5px solid #17191c;
+    border-radius: 100%;
+    right: 104.5%;
+    top: 55px;
+    transform: translateY(-7px);
+    background: #222529;
+    transition: var(--transition);
+}
+.personal-experience-inner .experience-list
+ .resume-single-list:hover .inner::after {
+    background: var(--color-primary);
+} 
+            /*--Single List End--*/
+         /*----Skill List End-----*/
+
+        /*-----==Single Resume End==----*/
+    /*---==Tab content Wrapper Start==---*/
+
+/*----------==Resume E#nd==-------------*/
